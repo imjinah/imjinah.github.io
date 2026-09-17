@@ -1,0 +1,79 @@
+@font-face {
+  font-family: myFont; /* set name */
+  src: url(./fonts/0xProto/0xProtoNerdFontMono-Regular.ttf); /* url of the font */
+  
+}
+
+pre {
+    font-family: myFont, monospace;
+    font-size: 13px;
+    max-width: 100%;
+    overflow-x: auto;
+    scrollbar-width: none;
+    margin: 0;
+    padding-left: 2vw;
+    
+}
+
+pre::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+
+* {
+    color:#d1d1d1;
+}
+
+
+body {
+    background-color:#000000;
+
+}
+.blink-fakedora-top{
+    color:#d1d1d1;
+}
+
+.blink-fakedora-bottom{
+    color:#d1d1d1;
+}
+
+.prompt {
+    color:#27df2e;
+}
+
+.dependencies {
+    color: #27df2e;
+}
+
+
+/* CSS Blink Animation */
+.blink {
+    animation: blink-animation 2s steps(1, start) infinite;
+}
+
+.blink-late {
+    animation: blink-animation 1.5s steps(1, start) -0.35s infinite;
+}
+
+.blink-later {
+    animation: blink-animation 2.4s steps(1, start) -0.7s infinite;
+}
+ .blink-fakedora-top {
+    animation: blink-animation 3.5s steps(1, start) infinite;
+} 
+
+ .blink-fakedora-bottom {
+    animation: blink-animation 4.25s steps(1, start) infinite;
+} 
+
+.blink-cursor {
+    animation: blink-animation 1.4s steps(1, start) infinite;
+}
+
+@keyframes blink-animation {
+    50% {
+        visibility: hidden;
+    }
+}
