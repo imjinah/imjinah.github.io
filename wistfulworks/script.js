@@ -96,20 +96,20 @@ function updateTrackers(today) {
     document.getElementById("year-title").textContent =
         `YEARLY PROGRESS BAR // ${year}`;
     document.getElementById("year-details").textContent =
-        `${yearPercentage.toFixed(2)}% | day ${dayOfYear}/${yearLength}` +
-        ` | ${remaining} days remaining (after today)`;
+        `${yearPercentage.toFixed(2)}% |  ${dayOfYear}/${yearLength} days elapsed` +
+        ` | ${remaining} days remaining`;
     updateBar("year-bar", yearPercentage);
 
     const gameStart = dayNumber(2026, 2, 19);
     const gameRelease = dayNumber(2031, 2, 19);
     const duration = gameRelease - gameStart;
     const elapsed = Math.max(0, Math.min(duration, currentDay - gameStart));
-    const daysBeforeRelease = Math.max(0, gameRelease - currentDay - 1);
+    const daysBeforeRelease = duration - elapsed;
     const gamePercentage = elapsed / duration * 100;
 
     document.getElementById("game-details").textContent =
         `${gamePercentage.toFixed(2)}% | ${elapsed}/${duration} days elapsed` +
-        ` | ${daysBeforeRelease} full days before release (after today)`;
+        ` | ${daysBeforeRelease} days remaining`;
     updateBar("game-bar", gamePercentage);
 }
 
