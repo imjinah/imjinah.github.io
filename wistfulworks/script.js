@@ -96,7 +96,7 @@ function updateTrackers(today) {
     document.getElementById("year-title").textContent =
         `YEARLY PROGRESS BAR // ${year}`;
     document.getElementById("year-details").textContent =
-        `${yearPercentage.toFixed(2)}% |  ${dayOfYear}/${yearLength} days elapsed` +
+        `${yearPercentage.toFixed(2)}% | day ${dayOfYear}/${yearLength} ` +
         ` | ${remaining} days remaining`;
     updateBar("year-bar", yearPercentage);
 
@@ -108,7 +108,7 @@ function updateTrackers(today) {
     const gamePercentage = elapsed / duration * 100;
 
     document.getElementById("game-details").textContent =
-        `${gamePercentage.toFixed(2)}% | ${elapsed}/${duration} days elapsed` +
+        `${gamePercentage.toFixed(2)}% | day ${elapsed}/${duration} ` +
         ` | ${daysBeforeRelease} days remaining`;
     updateBar("game-bar", gamePercentage);
 }
