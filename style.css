@@ -1,7 +1,9 @@
 @font-face {
-  font-family: myFont; /* set name */
-  src: url(./fonts/0xProto/0xProtoNerdFontMono-Regular.ttf); /* url of the font */
-  
+    font-family: myFont;
+    /* set name */
+    src: url(./fonts/0xProto/0xProtoNerdFontMono-Regular.ttf);
+    /* url of the font */
+
 }
 
 pre {
@@ -12,7 +14,7 @@ pre {
     scrollbar-width: none;
     margin: 0;
     padding-left: 2vw;
-    
+
 }
 
 pre::-webkit-scrollbar {
@@ -23,24 +25,25 @@ pre::-webkit-scrollbar {
 
 
 * {
-    color:#d1d1d1;
+    color: #d1d1d1;
 }
 
 
 body {
-    background-color:#000000;
+    background-color: #000000;
 
 }
-.blink-fakedora-top{
-    color:#d1d1d1;
+
+.blink-fakedora-top {
+    color: #d1d1d1;
 }
 
-.blink-fakedora-bottom{
-    color:#d1d1d1;
+.blink-fakedora-bottom {
+    color: #d1d1d1;
 }
 
 .prompt {
-    color:#27df2e;
+    color: #27df2e;
 }
 
 .dependencies {
@@ -60,13 +63,14 @@ body {
 .blink-later {
     animation: blink-animation 2.4s steps(1, start) -0.7s infinite;
 }
- .blink-fakedora-top {
-    animation: blink-animation 3.5s steps(1, start) infinite;
-} 
 
- .blink-fakedora-bottom {
+.blink-fakedora-top {
+    animation: blink-animation 3.5s steps(1, start) infinite;
+}
+
+.blink-fakedora-bottom {
     animation: blink-animation 4.25s steps(1, start) infinite;
-} 
+}
 
 .blink-cursor {
     animation: blink-animation 1.4s steps(1, start) infinite;
